@@ -1,0 +1,183 @@
+.head-info-box {
+	position: relative;
+	margin: 30rpx;
+	/* background: url('../../static/imgs/card_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	width: 708px;
+	height: 338px; */
+	background: linear-gradient(180deg, #6C63FF, #5A42EC);
+	box-shadow: 0 0 77rpx 34rpx rgba(139, 130, 131, 0.05);
+	padding-bottom: 60rpx;
+	padding-top: 26rpx;
+	min-height: 320rpx;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 20rpx;
+}
+	
+.card-top {
+	padding: 0 0 16rpx 34rpx;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+	
+.logo {
+	width: 164rpx;
+	height: 54rpx;
+	margin-right: 16rpx;
+}
+
+.site-name {
+	font-size: 26rpx;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 41rpx;
+}
+
+.switch-site-btn {
+	align-self: flex-end;
+	margin-left: auto;
+	width: 148rpx;
+	height: 44rpx;
+	line-height: 44rpx;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	border-radius: 22rpx 0rpx 0rpx 22rpx;
+	font-size: 20rpx;
+	font-family: Microsoft YaHei;
+	font-weight: 300;
+	color: #FFFFFF;
+	letter-spacing: 2;
+}
+	
+.switch-site-btn-icon {
+	margin-left: 6rpx;
+}
+
+.card-info {
+	padding: 0 30rpx 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+	
+.info {
+	font-size: 24rpx;
+	font-family: Microsoft YaHei;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-align: right;
+	margin-right: 20rpx;
+}
+	
+.name {
+	font-size: 32rpx;
+}
+
+.department {
+	margin: 12rpx 0;
+}
+
+.qrcode-box {
+	position: absolute;
+	width: 110rpx;
+	height: 110rpx;
+	background: rgba(255, 255, 255, 0.12);
+	border-radius: 50%;
+	left: 16rpx;
+	bottom: 16rpx;
+}
+	
+.qrcode-box::before {
+	content: "";
+	position: absolute;
+	left: -32rpx;
+	bottom: 50rpx;
+	width: 50rpx;
+	height: 50rpx;
+	background: rgba(255, 255, 255, 0.12);
+	border-radius: 50%;
+}
+
+.qrcode-box>image {
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.charts-box {
+	position: relative;
+	background: #fff;
+	margin: 0 30rpx 30rpx;
+	border-radius: 40rpx;
+	box-shadow: 0 0 77rpx 34rpx rgba(139, 130, 131, 0.05);
+}
+	
+.charts-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Microsoft YaHei;
+	font-weight: 400;
+	padding: 30rpx 30rpx 40rpx;
+}
+		
+.charts-top-title {
+	font-size: 32rpx;
+	color: #000000;
+	margin-left: 20rpx;
+	margin-right: 10rpx;
+	flex: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+	
+.charts-top-title::before {
+	content: '';
+	position: absolute;
+	left: 30rpx;
+	width: 6rpx;
+	height: 42rpx;
+	background: var(--bg);
+	border-radius: 8rpx;
+}
+
+.charts-top-time {
+	font-size: 22rpx;
+	color: #AAAAAA;
+	line-height: 48rpx;
+}
+	
+/* 请根据实际需求修改父元素尺寸，组件自动识别宽高 */
+.charts-content {
+	box-sizing: border-box;
+	padding-left: 40rpx;
+	padding-right: 40rpx;
+	padding-bottom: 40rpx;
+	width: 100%;
+	min-height: 460rpx;
+	/* display: flex;
+	justify-content: space-between;
+	align-items: center; */
+}
+
+.legend-data {
+	/* width: 100rpx; */
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	/* margin-left: 30rpx; */
+	font-size: 26rpx;
+	font-family: Microsoft YaHei;
+	font-weight: 400;
+	color: #666666;
+	line-height: 25px;
+}

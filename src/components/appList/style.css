@@ -1,0 +1,57 @@
+.box-white {
+	position: relative;
+	background: #fff;
+	padding-top: 30rpx;
+	margin: 0 30rpx 30rpx;
+}
+
+.app-title-box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20rpx;
+}
+
+.app-edit {
+	color: #888888;
+	font-size: 24rpx;
+}
+
+.app-icon {
+	width: 54rpx;
+	height: 54rpx;
+}
+
+.app-name {
+	font-size: 24rpx;
+	font-family: Microsoft YaHei;
+	font-weight: 400;
+	color: #0E254E;
+	margin-top: 20rpx;
+	width: 110rpx;
+	height: 64rpx;
+	text-align: center;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.app-class-title {
+	font-size: 32rpx;
+	font-family: Microsoft YaHei;
+	font-weight: 400;
+	color: #000000;
+}
+
+.add-icon {
+	position: absolute;
+	top: -14rpx;
+	right: 30rpx;
+	z-index: 1;
+}
+
+.empty {
+	color: #999;
+	font-size: 24rpx;
+	text-align: center;
+}

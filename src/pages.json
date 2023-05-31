@@ -1,0 +1,216 @@
+{
+	"lazyCodeLoading": "requiredComponents",
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path" : "pages/msg/msg",
+			"style" :                                                                                    
+			{
+				// #ifdef H5
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				// #endif
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			} 
+		},
+		{
+			"path" : "pages/mine/mine",
+			"style" :                                                                                    
+			{
+				// #ifdef H5
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				// #endif
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+				
+			} 
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : {
+				// #ifdef H5
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				// #endif
+				"navigationBarTitleText": "登陆",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/selectMechanism/selectMechanism",
+			"style" : {
+				// #ifdef H5
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				// #endif
+				"navigationBarTitleText": "选择机构",
+				"enablePullDownRefresh": false
+			}
+		}
+  ],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+				{
+					"path": "theme/theme",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "主题设置",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "search/search",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "manageMyApp/manageMyApp",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "管理我的应用",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "setting/setting",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "设置",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "cardBag/cardBag",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "卡包",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "changePassword/changePassword",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "修改密码",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "msgDesc/msgDesc",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "instructionsDesc/instructionsDesc",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "内容",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "webviewWrap/webviewWrap",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "userInfo/userInfo",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "个人中心",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "scanPay/scanPay",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						// #endif
+						"navigationBarTitleText": "支付",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "wxPay/wxPay",
+					"style": {
+						"navigationBarTitleText": "支付",
+						"enablePullDownRefresh": false
+					}
+				}
+      ]
+		}
+	],
+	"easycom": {
+	  "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "mobile",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff",
+		"backgroundColorTop":"#FFFFFF", // iOS APP真机bounce回弹区域默认灰色,建议统一重置为白色
+		"backgroundColorBottom": "#FFFFFF"
+	},
+	"tabBar": {
+		"backgroundColor": "#fff",
+		"color": "#B6B6B6",
+		"selectedColor": "#6C63FF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/home1.png",
+				"selectedIconPath": "static/tabbar/home_checked1.png"
+			},
+			{
+				"pagePath": "pages/msg/msg",
+				"text": "消息",
+				"iconPath": "static/tabbar/msg1.png",
+				"selectedIconPath": "static/tabbar/msg_ckecked1.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tabbar/mine1.png",
+				"selectedIconPath": "static/tabbar/mine_checked1.png"
+			}
+		]
+	}
+}
